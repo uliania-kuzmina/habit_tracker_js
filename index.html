@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер привычек</title>
+    <link rel="stylesheet" href="../трекер привычек/style.css">
+</head>
+<body>
+    <button onclick="toggleTheme()">Переключить тему</button>
+
+    <h1>Трекер привычек</h1>
+
+    <label>Новая привычка: <input type="text" id="habitInput"></label>
+    <button onclick="addHabit()">Добавить</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Привычка</th>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+                <th>Вс</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="habitTable"></tbody>
+    </table>
+
+    <h3>Прогресс:</h3>
+    <canvas id="progressChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../трекер привычек/script.js"></script>
+</body>
+</html>

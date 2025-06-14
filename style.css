@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+.dark-mode table {
+    border-color: white;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
